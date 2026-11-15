@@ -23,25 +23,40 @@
 <body>
 <main>
   <h1>GuessTheMovie Duel</h1>
-  <p class="meta">Privacy Policy · Last updated: 14 November 2026 · <a href="./">Support</a></p>
+  <p class="meta">Privacy Policy · Last updated: 15 November 2026 · <a href="./">Support</a></p>
 
   <section class="card">
     <h2>About this policy</h2>
-    <p>This policy describes how the GuessTheMovie Duel app handles information. GuessTheMovie Duel is a movie quiz where you challenge friends to duels through Game Center. The app is provided by Rizgar Teimouri (“we”).</p>
+    <p>This policy describes how the GuessTheMovie Duel app handles personal information. GuessTheMovie Duel is a movie quiz where you challenge friends to duels through Game Center. The app is provided by Rizgar Teimouri (“we”), an individual developer in Sweden, who is the controller responsible for your personal data. Contact: <a href="mailto:guessthemovie2026@outlook.com">guessthemovie2026@outlook.com</a>.</p>
 
     <h2>Information we store on our server</h2>
     <ul>
-      <li><strong>Your Game Center player ID.</strong> When you sign in, the app sends a signature from Game Center that proves which player you are. We check it with Apple and store your Game Center player ID together with a random player number that we create. We do not receive your name, nickname, email address or friends. The names you see in the app come from Game Center on your device.</li>
+      <li><strong>Your Game Center player ID.</strong> When you sign in, the app sends a signature from Game Center that proves which player you are. We verify it with Apple’s public key and store your Game Center player ID together with a random player ID that we create and when you last signed in. We do not receive your name, nickname, email address or friends list. The names you see in the app come from Game Center on your device.</li>
+      <li><strong>Your player ID.</strong> The random player ID is shown under <em>Settings → About</em> in the app. Include it if you contact us about your data.</li>
       <li><strong>Your duels.</strong> For each duel we store the questions you got, your answers, when each question was shown and answered, your score and the state of the duel. We also keep a list of every question you have received, so that you never get the same question twice.</li>
       <li><strong>Reports.</strong> If you report a mistake in a question, we store the text you write together with the duel and the question.</li>
+      <li><strong>The player you challenge.</strong> When you choose an opponent, the app sends their Game Center player ID to our server to check that you both have enough new questions. We don’t store it unless they play, but it can appear in our technical logs.</li>
     </ul>
-    <p>Our server runs on Cloudflare (Cloudflare Workers and D1), which processes this information on our behalf. The database is stored in the European Union.</p>
+    <p>Our server runs on Cloudflare (Cloudflare Workers and D1), which processes this information on our behalf under a data processing agreement. The database is stored in the European Union. Every night we make an encrypted backup of the database, which is stored with GitHub.</p>
+
+    <h2>What other players see</h2>
+    <p>When a duel is finished, your opponent sees your score and your answer to each question. Your name and picture are shown by Game Center, not by us.</p>
 
     <h2>Technical information</h2>
-    <p>When the app talks to our server, Cloudflare processes your IP address and technical details of the request to deliver it and to protect the service. Our server logs requests for a few days so that we can find and fix errors. We do not store IP addresses in our database.</p>
+    <p>When the app talks to our server, Cloudflare processes your IP address and technical details of the request, such as the address that was called, to deliver it and to protect the service. Our server logs requests for at most 7 days so that we can find and fix errors. We do not store IP addresses in our database.</p>
+
+    <h2>Email and beta testing</h2>
+    <p>If you email us, we receive your email address and your message. Our mailbox is a Microsoft Outlook.com account, so Microsoft stores the emails under its own privacy statement. We delete emails when your question has been answered, and at the latest after 12 months.</p>
+    <p>If you test the app with Apple’s TestFlight, Apple shares your feedback, screenshots and crash reports with us, and your name and email address if we invited you by email. We delete them when the beta ends.</p>
+
+    <h2>This website</h2>
+    <p>This website is hosted on GitHub Pages. GitHub logs visitors’ IP addresses for security. The site uses no cookies or analytics.</p>
+
+    <h2>Transfers outside the EU</h2>
+    <p>Cloudflare handles requests close to where you are and may store technical logs in its data centres worldwide. GitHub stores the encrypted backups in the United States and other countries. Transfers to the United States are covered by the European Commission’s adequacy decision for the EU–U.S. Data Privacy Framework, under which Cloudflare and GitHub are certified. Cloudflare’s other transfers are covered by the EU standard contractual clauses in its data processing agreement. Microsoft, Google and Apple are responsible for their own transfers.</p>
 
     <h2>How we use the information</h2>
-    <p>We use the information only to run the game: to sign you in, to run your duels and work out the results, to make sure you never get the same question twice, to fix questions that are wrong, and to keep the service secure. We do not sell information, and we do not use your game data for advertising.</p>
+    <p>We use the information only to run the game: to sign you in, to run your duels and work out the results, to make sure you never get the same question twice, to fix questions that are wrong, to answer you and to keep the service secure. We do not sell information, and we do not use your game data for advertising.</p>
 
     <h2>Advertising</h2>
     <p>The app shows a small banner from Google AdMob at the bottom of the screen, never while a question is shown.</p>
@@ -54,17 +69,32 @@
     <p>Read more in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and in <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
 
     <h2>Legal bases</h2>
-    <p>Under the GDPR we process your game data because it is needed to provide the game you use, technical logs because of our legitimate interest in keeping the service secure and working, and personalised ads and tracking only with your consent.</p>
+    <ul>
+      <li><strong>Contract</strong> (Article 6(1)(b) GDPR): signing you in, running your duels, your question history and showing results to your opponent.</li>
+      <li><strong>Legitimate interests</strong> (Article 6(1)(f)): technical logs and the record of game events (security and finding errors), backups (restoring the service after a fault), reports about questions (fixing wrong questions), answering emails and beta feedback (helping you and improving the app), and non-personalised ads (paying for a free game).</li>
+      <li><strong>Legal obligation</strong> (Article 6(1)(c)): handling requests about your privacy rights.</li>
+      <li><strong>Consent</strong> (Article 6(1)(a) and the ePrivacy rules): personalised ads, and storing or reading information on your device for ads.</li>
+    </ul>
+
+    <h2>Do you have to give us this information?</h2>
+    <p>You need Game Center to play, because we use your Game Center player ID to sign you in. Without it the app can’t be used. Consent to ads is optional: the game works fully if you say no. We don’t make decisions about you based solely on automated processing that have legal or similarly significant effects. If you consent to personalised ads, Google uses information about you to choose ads (profiling).</p>
 
     <h2>How long we keep information</h2>
-    <p>We keep your game data for as long as you use the app. Technical logs are deleted automatically after a few days.</p>
-    <p>You can delete your data at any time under <em>Settings → Delete my data</em>. This removes your Game Center player ID, your question history and your reports from our server, and ends any duels in progress (your opponent wins by walkover). Finished duels stay so that your opponents’ results do not change, but they can no longer be linked to you. If you play again later, you start as a new player and may get questions you have seen before.</p>
+    <p>We keep your game data while you use the app. If you have not signed in for 24 months, we delete it automatically, in the same way as <em>Delete my data</em> below. Technical logs are deleted automatically after at most 7 days.</p>
+    <p>Backups are kept for 30 days, so information that has been deleted disappears from them within 30 days. If we ever restore a backup, we delete the information again for every player who deleted it after the backup was made.</p>
+    <p>You can delete your data at any time under <em>Settings → Delete my data</em>. This removes your Game Center player ID, your question history and your reports from our server, and ends any duels in progress (your opponent wins by walkover). Finished duels stay so that your opponents’ results do not change, but without your Game Center player ID, so we can no longer connect them to you. Your opponent still sees the finished duel. If you play again later, you start as a new player and may get questions you have seen before.</p>
 
     <h2>Your rights</h2>
-    <p>You have the right to access, correct and delete your information, to restrict or object to how we use it, and to get a copy of it. Contact us at the address below. You can also lodge a complaint with the Swedish Authority for Privacy Protection (IMY) or the data protection authority where you live.</p>
+    <p>You can ask for access to your data and a copy in a machine-readable format (JSON), and ask us to correct or delete it or to restrict how we use it. Email us with your player ID from <em>Settings → About</em>. We answer within one month.</p>
+    <p><strong>Right to object.</strong> Where we rely on legitimate interests, you can object at any time on grounds relating to your situation. We will then stop, unless we have compelling legitimate grounds, such as security logs we need to protect the service.</p>
+    <p><strong>Withdrawing consent.</strong> You can withdraw your consent to ads at any time under <em>Settings → Ad privacy choices</em>. This doesn’t affect processing before you withdrew it.</p>
+    <p>You can lodge a complaint with the Swedish Authority for Privacy Protection (IMY, <a href="https://www.imy.se">imy.se</a>) or the data protection authority where you live or work.</p>
+
+    <h2>Who we share information with</h2>
+    <p>Cloudflare processes data only on our instructions under a data processing agreement. GitHub stores our encrypted backups. Google, Apple and Microsoft are responsible for their own processing. The companies we share data with provide the same or equal protection of your data as described in this policy.</p>
 
     <h2>Children</h2>
-    <p>GuessTheMovie Duel is not directed at children under 13.</p>
+    <p>GuessTheMovie Duel is not directed at children under 13. If you think a child under 13 uses the app, contact us and we will delete the data.</p>
 
     <h2>Changes and contact</h2>
     <p>If this policy changes, we update the date at the top. Questions: <a href="mailto:guessthemovie2026@outlook.com">guessthemovie2026@outlook.com</a>.</p>
